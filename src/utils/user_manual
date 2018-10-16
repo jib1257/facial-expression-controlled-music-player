@@ -1,0 +1,28 @@
+Dependencies used in this project:
+opencv(cv2), tensorflow, statistics, keras, pillow, vlc
+To install these python modules, open up a terminal and issue the following commands:
+$ sudo apt update
+$ sudo apt install python-pip 
+(or if using python 3, use: $sudo apt install python3-pip)
+
+To verify the installation, issue:
+$ pip --version (or $ pip3 --version if you are using python 3)
+[you should see the version of pip you are currently using]
+
+To install statistics module, issue:
+$ pip install statistics
+
+To install tensorflow, issue:
+$ pip install tensorflow
+
+To install keras, issue:
+$ pip install keras
+
+To install opencv, issue:
+$ apt-get install python-opencv
+
+To install pillow, issue:
+$ pip install pillow
+
+To install vlc, issue:
+$ pip install vlc

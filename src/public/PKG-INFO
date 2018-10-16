@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: public
+Version: 1.0.3
+Summary: @public decorator, public(*objects) function - add objects names to __all__
+Home-page: https://github.com/looking-for-a-job/public.py
+License: UNKNOWN
+Description: ### Install
+        
+        ```bash
+        $ [sudo] pip install public
+        ```
+        
+        ### Usage
+        
+        ```python
+        >>> from public import public
+        
+        >>> @public # decorator
+        
+        >>> public(*objects) # function
+        ```
+        
+        ### Examples
+        
+        ```python
+        >>> @public
+        	def func(): pass
+        
+        >>> @public
+        	class CLS: pass
+        
+        >>> print(__all__)
+        ['CLS',func']
+        
+        # public(*objects) function
+        >>> public("name")
+        >>> public("name1","name2")
+        
+        >>> print(__all__)
+        ['name','name1','name2']
+        ```
+        
+        ### Sources
+        
+        +   [`public.public(*objects)`](https://github.com/looking-for-a-job/public.py/blob/master/public/__init__.py)
+Keywords: public __all__
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
